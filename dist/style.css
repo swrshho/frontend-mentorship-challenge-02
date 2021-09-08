@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -40,5 +41,113 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.tt-u {
+  text-transform: uppercase;
+}
+
+.tt-n {
+  text-transform: none;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+.main {
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+.main .container {
+  background-color: #e5eef3;
+  padding: 3rem 2.5rem;
+  border-radius: 30px;
+  width: 70%;
+  max-width: 450px;
+  min-width: 250px;
+}
+
+.main .input-list {
+  list-style: none;
+  width: 100%;
+}
+
+.main .txt-input {
+  margin-bottom: 0.7rem;
+}
+
+.main .txt-input input {
+  width: 100%;
+  height: 5rem;
+  border: none;
+  border-radius: 15px;
+  padding: 0 1rem;
+}
+
+.main .txt-input input::-webkit-input-placeholder {
+  color: #818181;
+}
+
+.main .txt-input input:-ms-input-placeholder {
+  color: #818181;
+}
+
+.main .txt-input input::-ms-input-placeholder {
+  color: #818181;
+}
+
+.main .txt-input input::placeholder {
+  color: #818181;
+}
+
+.main .txt-input label {
+  display: inline-block;
+  margin-bottom: 0.7rem;
+}
+
+.main .gender-input {
+  margin-bottom: 1rem;
+}
+
+.main .gender-input-item {
+  background-color: #ffffff;
+  margin-right: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 13px;
+}
+
+.main .terms {
+  margin-bottom: 1rem;
+}
+
+.main .checkbox {
+  margin-right: 0.7rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.main .checkbox :checked {
+  background-color: #3498db;
+}
+
+.main #acc-btn {
+  border: none;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 1.5rem;
+  height: 4rem;
+  border-radius: 10px;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.main #acc-btn:hover {
+  background-color: #1976b4;
 }
 /*# sourceMappingURL=style.css.map */

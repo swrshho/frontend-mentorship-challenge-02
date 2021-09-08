@@ -11,43 +11,49 @@
   <title>challenge 02</title>
 </head>
 <body>
-  <main class="main">
-    <div class="container">
+  <main class="main flex fd-c ai-c jc-c">
+    <div class="container flex fd-c jc-c">
       <form action="#" class="form flex jc-sb">
 
-        <ul class="input-list">
+        <ul class="input-list ">
 
-          <li class="input-item ">
+          <li class="input-item txt-input">
             <label for="name">Full name:</label><br>
-            <input type="text" id="name" name="name" value="Your name"><br>
+            <input type="text" id="name" name="name" placeholder="your name"><br>
           </li>
 
-          <li class="input-item">
+          <li class="input-item txt-input">
             <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" value="Email Address"><br>
+            <input type="email" id="email" name="email" placeholder="Email address"><br>
           </li>
 
-          <li class="input-item">
+          <li class="input-item txt-input">
             <label for="birthday">Date of birth:</label><br>
-            <input type="date" id="birthday" name="birthday" min="1900-01-01" max="2025-01-01">
+            <input class="tt-u cp" type="date" id="birthday" name="birthday" min="1900-01-01" max="2025-01-01">
           </li>
 
-          <li class="list-item">
+          <li class="list-item gender-input">
             <label for="gender">Gender:</label><br>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">female</label>
+            <div class="flex jc-a">
+              <div class="gender-input-item">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">male</label>
+              </div>
+              <div class="gender-input-item">
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">female</label>
+              </div>
+            </div>
           </li>
 
-          <li class="list-item">
-            <input type="checkbox" name="terms" id="terms">
-            <p>i accept the terms & conditions</p>
+          <li class="list-item flex terms">
+            <input class="checkbox" type="checkbox" name="terms" id="terms">
+            <p class="tt-n">I accept the terms & conditions</p>
           </li>
         </ul>
       </form>
 
-      <button id="acc-btn" type="submit">create account</button>
+      <button class="cp" id="acc-btn" type="submit">create account</button>
     </div>
   </main>
 </body>
